@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'emoji'
+
+chatter = Emoji::Chatter.new
+chatter.say_hello
