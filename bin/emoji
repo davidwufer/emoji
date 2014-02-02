@@ -2,5 +2,5 @@
 
 require 'emoji'
 
-chatter = Emoji::Chatter.new
-chatter.say_hello
+menu = Emoji::Menu.new
+menu.run
