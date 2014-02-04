@@ -40,8 +40,8 @@ module Emoji
 
   class Emojis
     def list
-      # TODO: Fix this so it works wherever the data is stored
-      @emojis ||= File.read("data/emoji.dat").split("\n")
+      file_path = File.expand_path("../../data/emoji.dat", __FILE__)
+      @emojis ||= File.read(file_path).split("\n")
     end
   end
 end
