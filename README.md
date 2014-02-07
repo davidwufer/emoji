@@ -10,6 +10,6 @@ $.map($('.postbody p'), function(node) { return node.textContent; } ).join("\n")
 ```
 
 ```ruby
-rake install
-emoji
+# Local Install
+bundle install && emoji
 ```

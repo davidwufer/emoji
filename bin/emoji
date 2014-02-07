@@ -1,6 +1,15 @@
 #!/usr/bin/env ruby
 
 require 'emoji'
+require 'trollop'
 
-menu = Emoji::Menu.new
+opts = Trollop::options do
+  version "#{Emoji::VERSION} (c) 2014 David Wu"
+  banner <<-EOS
+Emoji Power
+  EOS
+end
+
+menu = Emoji::Menu.new()
 menu.run
+
