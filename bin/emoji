@@ -8,8 +8,13 @@ opts = Trollop::options do
   banner <<-EOS
 Emoji Power
   EOS
+
+  opt :random, "Select a Random Emoji"
+  opt :list, "Select from all Emoji"
+  # --random
+  # --recent (default)
 end
 
-menu = Emoji::Menu.new()
+menu = Emoji::Menu.new(opts)
 menu.run
 
